@@ -1,0 +1,27 @@
+.row{
+  display: flex;
+  gap: 2rem;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-add{
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1 px solid gray;
+  background-color: green;
+}
+
+.btn-del{
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1 px solid gray;
+  background-color: red;
+}
