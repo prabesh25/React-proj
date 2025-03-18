@@ -1,5 +1,7 @@
 import React from "react";
 import OnYourMind from "./OnYourMind";
+// import { Outlet } from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
 
 const Head = () => {
   const navItems = [
@@ -28,16 +30,20 @@ const Head = () => {
       image: "fi-rr-shopping-cart-add",
     },
   ];
+  console.log(navItems)
 
   return (
-    <div className="w-full flex justify-center items-center shadow-lg h-24">
+    <>
+      <div className="w-full flex justify-center items-center shadow-lg h-24">
       <div className="w-[70%] flex justify-between">
         <div className="flex">
+          <Link to={"/"}>
           <img
             className="w-24"
             src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png"
             alt=""
           />
+          </Link>
           <div className="flex gap-1 items-center">
             <p className="font-bold border-b-2 border-black">others</p>
             <i className="mt-2 text-orange-500 text-2xl fi fi-rs-angle-small-down"></i>
@@ -53,7 +59,13 @@ const Head = () => {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+
+      <Outlet/>
+    </>
+    
+
+    
   );
 };
 

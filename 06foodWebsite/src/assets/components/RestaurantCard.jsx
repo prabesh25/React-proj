@@ -1,8 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const RestaurantCard = (info) => {
+  console.log(info.link.split("/"))
   return (
-    <>
+    // <Link to={`/restaurantMenu/${info.link.split("/")[4]}`}>
+    <Link to={`/restaurantMenu/${info.id}`}>
+
         <div  className='min-w-[295px] h-[182px] relative overflow-hidden'>
                         <img className='w-full h-full rounded-2xl object-cover' src={`https://media-assets.swiggy.com/swiggy/image/upload/${info?.cloudinaryImageId}`} alt="" />
                         {/* <div className='absolute bg-gradient-to-t from-black from-1% to-transparent to-40% w-full h-full'></div> */}
@@ -18,7 +22,7 @@ const RestaurantCard = (info) => {
                         <p className='line-clamp-1 text-black/10 font-medium'>{info.cuisiness}</p>
                         <p className='line-clamp-1 text-black/60 font-medium'>{info.locality}</p>
                     </div>
-    </>
+    </Link>
   )
 }
 

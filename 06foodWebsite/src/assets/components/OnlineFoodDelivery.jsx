@@ -8,9 +8,9 @@ const OnlineFoodDelivery = ({data}) => {
         {/* <RestaurantCard {...info}/> */}
         <div  className='grid grid-cols-4 gap-10'>
         {
-                data.map(({info}) => (
+                data.map(({info,cta: {link}}) => (
                     <div className='hover:scale-90 duration-300'>
-                        <RestaurantCard {...info}/>
+                        <RestaurantCard {...info} link={link}/>
                     </div>
                 ))
                }
