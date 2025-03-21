@@ -18,10 +18,7 @@ function App() {
       <Route path="/restaurantMenu/:id" element={<RestaurantMenu />} />
       </Route>
     </Routes>
-    // <>
-    //   <Head />
-    //   <Body />
-    // </>
+   
   );
 }
 

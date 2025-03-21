@@ -432,3 +432,190 @@ function Discount({
 export default RestaurantMenu;
 
 // prabesh prabprabeshesh
+
+
+
+
+
+
+
+
+
+
+// <div className="p-4 w-full">
+// {/* <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto.q_auto,w-40,h_40/" + restInfo.feeDetails?.icon} alt="" /> */}
+// <div className="flex items-center">
+//   {/* <i className="fi w-[10px] bg-black border fi-sc-biking-mountain text-lg"></i> */}
+//   {/* <i class="fi fi-br-biking-mountain"></i> */}
+//   <i className="mr-2.5 fi fi-rr-biking-mountain"></i>
+//   {restInfo.length !== 0 ? (
+//     <span className="text-md mb-1 text-gray-500">
+//       {
+//         restInfo?.nearestOutletNudge?.nearestOutletInfo
+//           ?.siblingOutlet?.sla.lastMileTravelString
+//       }
+//       {"  -  "} will be delivered within {""}
+//       {
+//         restInfo?.nearestOutletNudge?.nearestOutletInfo
+//           ?.siblingOutlet?.sla.deliveryTime
+//       }{" "}
+//       minutes
+//     </span>
+//   ) : (
+//     ""
+//   )}
+//   {/* <div>{restInfo?.nearestOutletNudge?.nearestOutletInfo?.siblingOutlet?.sla}</div> */}
+// </div>
+// </div>
+// </div>
+// </div>
+
+// <div className="w-full overflow-hidden">
+// <div className="flex items-center justify-between mt-8">
+// <h1 className="font-bold text-xl">Deals for you</h1>
+// <div className="flex gap-2">
+// <div
+//   onClick={handlePrev}
+//   className={`cursor-pointer rounded-full w-8 h-9 flex justify-center items-center ${
+//     value <= 0 ? "bg-gray-100" : "bg-gray-200"
+//   }`}
+// >
+//   <i
+//     className={`text-2xl fi mt-1 fi-rr-arrow-small-left ${
+//       value <= 0 ? "text-gray-300" : "text-gray-800"
+//     }`}
+//   ></i>
+// </div>
+// <div
+//   onClick={handleNext}
+//   className={`cursor-pointer rounded-full w-8 h-9 flex justify-center items-center ${
+//     value >= 124 ? "bg-gray-100" : "bg-gray-200"
+//   }`}
+// >
+//   <i
+//     className={`text-2xl fi mt-1 fi-rr-arrow-small-right ${
+//       value >= 124 ? "text-gray-300" : "text-gray-800"
+//     }`}
+//   ></i>
+// </div>
+// </div>
+// </div>
+// <div className="flex gap-4 mt-5">
+// {discountData.map((data) => (
+// <Discount data={data} />
+// ))}
+// </div>
+// </div>
+
+// <h2 className="text-center mt-5 leading-5">Menu</h2>
+// <div className="w-full mt-5 relative cursor-pointer">
+// <div className="w-full rounded-xl p-3 font-semibold  bg-slate-200 text-center">
+// Search for dishes
+// </div>
+// <i className="absolute top-3 right-4 fi fi-rs-search"></i>
+// </div>
+
+// <div>
+// {menuData.map(({ card: { card } }) => (
+// <MenuCard card={card} />
+// // // i
+// // <div>
+// //   <div className="flex justify-between">
+// //     <h1>
+// //       {title} ({itemCards.length})
+// //     </h1>
+// //     <i
+// //       className="fi fi-rr-angle-small-up"
+// //       // onClick={() => toogleFun(i)}
+// //     ></i>
+// //   </div>
+
+// //   <div className="m-5">
+// //     {itemCards.map(({ card: { info } }) => (
+// //       <h1>{info.name}</h1>
+// //     ))}
+// //   </div>
+// // </div>
+// ))}
+
+// {/* {
+// <div>
+// <h1>
+//   {menuData[0]?.card?.card?.title} (
+//   {menuData[0]?.card?.card?.itemCards?.length})
+// </h1>
+// <i
+//   className="fi text-2xl fi-rr-angle-small-up"
+//   onClick={toogleFun}
+// ></i>
+// {currIndex && (
+//   <div className="m-5">
+//     {menuData[0]?.card?.card?.itemsCards.map(
+//       ({ card: { info } }) => (
+//         <h1>{info.name}</h1>
+//       )
+//     )}
+//   </div>
+// )}
+// </div>
+// } */}
+// </div>
+// </div>
+// </div>
+// );
+// };
+
+// function MenuCard({ card }) {
+// let hello = false;
+
+// if (card["@type"]) {
+// hello = true;
+// }
+
+// const [isOpen, setIsOpen] = useState(hello);
+
+// function toggleDropDown() {
+// setIsOpen((prev) => !prev);
+// }
+
+// if (card.itemCards) {
+// const { title, itemCards } = card;
+
+// return (
+// <>
+// <div className="mt-7">
+// <div className="flex justify-between">
+// <h1 className="font-bold text-xl">
+// {title} ({itemCards.length})
+// </h1>
+// <i
+// onClick={toggleDropDown}
+// className={
+//   "fi text-xl fi-rr-angle-small-" + (isOpen ? "up" : "down")
+// }
+// ></i>
+// </div>
+// {isOpen && <DetailMenu itemCards={itemCards} />}
+// </div>
+// <hr
+// className={
+// "text-gray-300 my-5 border-" + (card["@type"] ? "[10px]" : "[4px]")
+// }
+// />
+// </>
+// );
+// } else {
+// const { title, categories } = card;
+// return (
+// <div>
+// <h1 className={"font-bold text-" + (card["@type"] ? "xl" : "base")}>
+// {" "}
+// {title}
+// </h1>
+// {categories.map((data) => {
+// <MenuCard card={data} />;
+// })}
+// </div>
+// );
+// }
+// }
