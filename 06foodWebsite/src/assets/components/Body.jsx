@@ -10,8 +10,6 @@ const Body = () => {
   const [onYourMindData, setOnYourMindData] = useState([])
   const {coord : {lat, lng}} = useContext(Coordinates)
   // let [tempdata, setTempData] = useState([])
-
-
    async function fetchData() {
           try {
               const response = await fetch(
@@ -31,8 +29,6 @@ const Body = () => {
       useEffect(() => {
           fetchData();
       }, [lat, lng]);
-
-
 
   // const [data, setData] = useState([]);
   // const [value, setValue] = useState(0);
@@ -69,8 +65,7 @@ const Body = () => {
   //   if (value > 0) {
   //     setValue((prev) => prev - 31);
   //   }
-  // }
-
+  // 
   return (
     <div className="w-full overflow-hidden">
       <div className="w-[75%] flex flex-col overflow-hidden mt-3 mx-auto">

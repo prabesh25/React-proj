@@ -473,7 +473,6 @@ function DetailMenuCard ({info: {
   );
 }
 
-
 // DetailMenuCard()
 function Discount({
   data: {

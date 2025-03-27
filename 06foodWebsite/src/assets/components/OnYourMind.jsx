@@ -11,9 +11,7 @@ const OnYourMind = ({data}) => {
     
     const [value, setValue] = useState(0);
     // const [data, setData] = useState([]);
-  
     // console.log(data?.cards?.[0]?.card?.imageGridCards?.info)
-    
     function handleNext() {
         if (value < 124) {
           setValue((prev) => prev + 31);
@@ -25,8 +23,6 @@ const OnYourMind = ({data}) => {
           setValue((prev) => prev - 31);
         }
       }
-  
-  
     // async function fetchData() {
     //   try {
     //     const response = await fetch(
@@ -38,16 +34,13 @@ const OnYourMind = ({data}) => {
     //     // console.log(result?.data?.card?.[0]?.card?.imageGridCards?.info);
     //     setData(result?.data?.cards[0]?.card?.card?.imageGridCards?.info);
     //     // console.log(result?.data?.cards[0]?.card?.card?.imageGridCards?.info);
-  
     //   } catch (error) {
     //     console.error("Error fetching data:", error);
     //   }
     // }
-  
     // useEffect(() => {
     //   fetchData();
     // }, []);
-  
   return (
     <div>
       <div className="flex flex-col">
@@ -98,9 +91,6 @@ const OnYourMind = ({data}) => {
         </div>
         <hr className='text-gray-300 mt-5'/>
     </div>
-
-
-
   )
 }
 

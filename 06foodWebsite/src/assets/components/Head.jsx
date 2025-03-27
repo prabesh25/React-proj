@@ -38,12 +38,10 @@ const Head = () => {
   const [adress, setAdress] = useState("")
 
   const { setCoord} = useContext(Coordinates)
-  
   // console.log(navItems)
   // function handleSearchFunctionality(){
   //   setVisible(prev => !prev)
   // }
-
   function handleVisibility(){
     setVisible(prev => !prev)
   }
@@ -70,7 +68,6 @@ const Head = () => {
     setSearchRes(data.data)
     setAdress(data.data[0].formatted_address)
   }
-
 
   return (
     <div className="relative w-full">
